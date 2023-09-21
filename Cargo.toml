@@ -1,0 +1,14 @@
+[package]
+name = "texttoqrtgbot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "1.0.152"
+ureq = "2.6.2"
+qrcode-generator = "4.1.7"
+tokio = { version = "1.25.0", features = ["rt", "net", "macros", "io-util", "rt-multi-thread"] }
+tgbot = "0.18.0"
+futures-util = "0.3.26"
