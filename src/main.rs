@@ -23,7 +23,7 @@ impl UpdateHandler for Handler {
                     let t = text.data.as_str();
                         if t=="/start" { method = Some(SendMessage::new(chat_id, "Hello! Send me some text(or link) to generate a QR code.".to_string()));}
                         else {
-                            let p = r"C:\Users\User\Documents\rustproj\texttoqrbot\src\tests\data\file_output.png";
+                            let p = r"C:\Users\User\Documents\rustproj\texttoqrtgbot\src\file_output.png";
                             let qr = qrcode_generator::to_png_to_file(t, QrCodeEcc::Low, 1024, p);
                             if let Err(e) = qr {
                                 let txt=format!("Oops! An {} error occured!", e);
